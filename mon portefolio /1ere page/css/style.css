@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Arial', sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    background-color: black;
+    border-bottom: 1px solid #333;
+}
+h1 {
+    color: white;
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+    text-decoration: -thickness: 3px;
+    text-underline-offset: 5px;
+    animation: underlineFade 1s forwards;
+}
+
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: blueviolet;
+}
+
+#accueil{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height:  calc(100vh - 70px);
+    padding-top: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 40px;
+}
+
+#accueil .photo-gauche img{
+    width: 400px;
+    max-width: 90vw;
+    height: auto;
+    opacity: 0.2;
+    animation: illuminer 17s forwards;
+}
+
+main{
+    padding-top: 100px;
+}
+
+section {
+   min-height: 100vh;
+   padding: 40px;
+    font-size: 24px;
+}
+
+selection.page{
+    font-size: 24px;
+}
+
+.page{
+    display: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 40px;
+    height: calc (100vh - 70px);
+    padding: 70px 40px 0 40px;
+}
+
+.texte-droit{
+  text-align: right;
+  color: white;
+  font-size: 24px;
+  align-self: flex-start;
+  max-width: 600px;
+}
+
+.texte-droit h1{
+    font-size: 48px;
+    margin-bottom: 10px;
+    
+}
+
+.texte-intro{
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.texte-droit .motivation {
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+@keyframes illuminer {
+    from { opacity:0.3;}
+    to { opacity: 0.7}
+}
+
